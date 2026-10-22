@@ -27,5 +27,9 @@ namespace Kino_Alikin
         {
             frame.Navigate(pages);
         }
+        private void Clubs(object sender, RoutedEventArgs e) =>
+            OpenPages(new Pages.Clubs.Main());
+        private void User(object sender, RoutedEventArgs e) =>
+            OpenPages(new Pages.Users.Main());
     }
 }

@@ -9,12 +9,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\ic-clubs.png" />
+    <None Remove="Images\ic-users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.32" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.32">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ic-clubs.png" />
+    <Resource Include="Images\ic-users.png" />
   </ItemGroup>
 
 </Project>

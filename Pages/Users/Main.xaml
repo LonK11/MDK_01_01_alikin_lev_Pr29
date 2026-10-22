@@ -10,7 +10,25 @@
 
     <Grid>
         <Grid Margin="20" Background="#FFF0F0F0">
-            <ScrollViewer Margin="0,0,0,50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ComboBox
+                x:Name="CmbSort"
+                Grid.Row="0"
+                Height="25"
+                Width="220"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="10"
+                SelectionChanged="SortUsers">
+                <ComboBoxItem Content="Без сортировки" IsSelected="True"/>
+                <ComboBoxItem Content="По ФИО (А-Я)"/>
+                <ComboBoxItem Content="По дате начала аренды"/>
+                <ComboBoxItem Content="По длительности"/>
+            </ComboBox>
+            <ScrollViewer Grid.Row="1" Margin="0,35,0,50">
                 <StackPanel x:Name="Parent"/>
             </ScrollViewer>
             <Button

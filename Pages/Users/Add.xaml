@@ -34,7 +34,7 @@
               VerticalContentAlignment="Center" />
 
             <Label Content="Продолжительность:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Column="1"/>
-            <TextBox x:Name="Duration" Text="Продолжительность" VerticalAlignment="Top" Margin="10,36,10,0" Height="25"
+            <TextBox x:Name="Duration" VerticalAlignment="Top" Margin="10,36,10,0" Height="25"
               VerticalContentAlignment="Center" Grid.Column="1"/>
 
             <Label Content="Клуб:" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,66,0,0" Grid.Column="1"/>
